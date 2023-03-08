@@ -120,28 +120,6 @@ def build_update_features() -> list:
         # feature from api
         matching_row = new_data.loc[new_data["stationName"] == station]
 
-        # update_feature.attributes["datatime"] = matching_row["dataTime"].iloc[0]
-        # update_feature.attributes["so2value"] = matching_row["so2Value"].iloc[0]
-        # update_feature.attributes["so2grade"] = matching_row["so2Grade"].iloc[0]
-        # update_feature.attributes["so2flag"] = matching_row["so2Flag"].iloc[0]
-        # update_feature.attributes["o3grade"] = matching_row["o3Grade"].iloc[0]
-        # update_feature.attributes["o3value"] = matching_row["o3Value"].iloc[0]
-        # update_feature.attributes["o3flag"] = matching_row["o3Flag"].iloc[0]
-        # update_feature.attributes["pm25grade"] = matching_row["pm25Grade"].iloc[0]
-        # update_feature.attributes["pm25flag"] = matching_row["pm25Flag"].iloc[0]
-        # update_feature.attributes["pm25value"] = matching_row["pm25Value"].iloc[0]
-        # update_feature.attributes["pm10flag"] = matching_row["pm10Flag"].iloc[0]
-        # update_feature.attributes["pm10value"] = matching_row["pm10Value"].iloc[0]
-        # update_feature.attributes["pm10grade"] = matching_row["pm10Grade"].iloc[0]
-        # update_feature.attributes["no2value"] = matching_row["no2Value"].iloc[0]
-        # update_feature.attributes["no2grade"] = matching_row["no2Grade"].iloc[0]
-        # update_feature.attributes["no2flag"] = matching_row["no2Flag"].iloc[0]
-        # update_feature.attributes["coflag"] = matching_row["coFlag"].iloc[0]
-        # update_feature.attributes["covalue"] = matching_row["coValue"].iloc[0]
-        # update_feature.attributes["cograde"] = matching_row["coGrade"].iloc[0]
-        # update_feature.attributes["khaivalue"] = matching_row["khaiValue"].iloc[0]
-        # update_feature.attributes["khaigrade"] = matching_row["khaiGrade"].iloc[0]
-
         for field in update_fields:
             update_feature.attributes[field.lower()] = matching_row[field].iloc[0]
 
