@@ -5,6 +5,7 @@ ArcGIS Online은 공간정보를 손쉽게 공유하고 사용할 수 있게 해
 한국에스리 실시간 피드 구축 프로젝트는 ArcGIS 사용자가 곧바로 활용할 수 있는 데이터를 준비하기 위함이다.
 
 ## 실시간 대기 정보
+[한국에스리 포털](https://portal.esrikr.com/portal/home/item.html?id=83d7a737f3094a118ef1eeeea4b9de7d) (Sharing Level: Public)
 ### 사용 방법
 1) 해당 리포지토리를 클론한다.
 2) 새로운 환경변수 파일(`.env`)을 생성한다
